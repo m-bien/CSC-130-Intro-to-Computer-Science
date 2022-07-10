@@ -1,4 +1,4 @@
-package temp;
+package GoodMLab2;
 
 import java.util.Scanner;
 /**
@@ -15,7 +15,7 @@ import java.util.Scanner;
     CSC 130, Sec 1
 **/
  
-public class temp {
+public class GoodMLab2 {
     
     // constants (pint equivalencies)
     public static final double QUARTS = 2;
