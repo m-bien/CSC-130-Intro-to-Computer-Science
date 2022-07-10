@@ -1,4 +1,4 @@
-package GoodMLab2;
+package temp;
 
 import java.util.Scanner;
 /**
@@ -15,48 +15,50 @@ import java.util.Scanner;
     CSC 130, Sec 1
 **/
  
-public class GoodMLab2 {
-    public static void main(String[] args) {    
+public class temp {
+    
+    // constants (pint equivalencies)
+    public static final double QUARTS = 2;
+    public static final double GALLONS = 8;
+    public static final double LITERS = 2.113383;
+    
+    public static void main(String[] args) { 
         System.out.println("Madelyn Good");
     	System.out.println("CSC 130-01");
 	System.out.println("Lab Two");
     	System.out.println();
 
 	// ----- Section 1 -----
-
+        
+        // user input
 	Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number of pints to be converted: ");
 	double pints = scanner.nextDouble();
 	System.out.println();
 
-	// conversions
-	double pintsToQuarts = pints * 0.5;
-	double pintsToGallons = pints * 0.125;
-	double pintsToLiters = pints * 0.4731749995149957;
-
 	// calculate equivalencies
 	System.out.println(pints + " pints is equal to: ");
-	System.out.println(pintsToQuarts + " quarts ");
-	System.out.println(pintsToGallons + " gallons ");
-	System.out.println(pintsToLiters + " liters ");
+	System.out.println(pints / QUARTS + " quarts ");
+	System.out.println(pints / GALLONS + " gallons ");
+	System.out.println(pints / LITERS + " liters ");
 	System.out.println();
 
         
 	// ----- Section 2 -----
 
-	// pre-increment operator
-        double pints1 = ++pints;
-        System.out.println("Now pints is equal to: " + pints1);
+	// increment operator
+        pints++;
+        System.out.println("Now pints is equal to: " + pints);
 	System.out.println();
 
 	// augmented operator
-        double pints2 = pints1 *= 3;
-	System.out.println("Now pints is equal to : " + pints2);
+        pints *= 3;
+	System.out.println("Now pints is equal to : " + pints);
 	System.out.println();
 
 	// pow method
-	double pints3 = Math.pow(pints2,3);
-	System.out.println("Now pints is equal to : " + pints3);
+	pints = Math.pow(pints,3);
+	System.out.println("Now pints is equal to : " + pints);
 	System.out.println();
 
 	}
